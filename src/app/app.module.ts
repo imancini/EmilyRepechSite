@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { ResumeComponent } from './resume/resume.component';
 import { ReferencesComponent } from './references/references.component';
 import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 const appRoutes: Routes = [
@@ -14,6 +15,7 @@ const appRoutes: Routes = [
   { path: 'resume', component: ResumeComponent },
   { path: 'references', component: ReferencesComponent },
   { path: 'about', component: AboutComponent },
+  { path: 'contact', component: ContactComponent },
 ]
 @NgModule({
   declarations: [
@@ -21,7 +23,8 @@ const appRoutes: Routes = [
     HomeComponent,
     ResumeComponent,
     ReferencesComponent,
-    AboutComponent
+    AboutComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

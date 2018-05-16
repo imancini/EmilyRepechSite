@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Encode+Sans|Roboto+Slab');
+@import "../../styles/global_styles.scss";
 
 .name {
     font-family: 'Roboto Slab', serif;
@@ -6,88 +7,37 @@
     margin-bottom: 0px;
 }
 
-.home-container{
-    padding-top: 30px;
+.name2 {
+    font-family: 'Roboto Slab', serif;
+    text-decoration: underline;
 }
-#home-banner {
-    position: relative;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
+
+.summary {
+    font-family: 'Roboto Slab', serif;
+}
+
+.left-banner {
+    margin: auto;
+}
+
+.right-banner{
+    margin: auto;
+    padding-top: 25px;
 }
 
 #emily-repech {
     // position: absolute;
-    border-radius: 50%;
+    // border-radius: 50%;
     margin-top:50px;
     margin-bottom:50px;
+    box-shadow: 5px 5px 2px grey;
 }
 
 .home-container {
     background-color: rgba(255,255,255,0.9);
     padding-bottom: 30px;
     max-width: 768px;
-}
-
-.home-container-footer {
-    background-color: rgba(0,0,0,0.7);
-    width: 100%;
+    min-height: 100vh;
 }
 
 
-.social {
-    margin: 0;
-    padding: 0;
-}
-
-.social ul {
-    margin: 0;
-    padding: 5px;
-}
-
-.social ul li {
-    margin: 5px;
-    list-style: none outside none;
-    display: inline-block;
-}
-
-.social i {
-    width: 80px;
-    height: 80px;
-    color: #FFF;
-    background-color: #909AA0;
-    font-size: 44px;
-    text-align:center;
-    padding-top: 24px;
-    border-radius: 50%;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -o-border-radius: 50%;
-    transition: all ease 0.3s;
-    -moz-transition: all ease 0.3s;
-    -webkit-transition: all ease 0.3s;
-    -o-transition: all ease 0.3s;
-    -ms-transition: all ease 0.3s;
-    margin-left: 20px;
-    margin-left: 20px;
-}
-
-.social i:hover {
-    color: #FFF;
-    text-decoration: none;
-    transition: all ease 0.3s;
-    -moz-transition: all ease 0.3s;
-    -webkit-transition: all ease 0.3s;
-    -o-transition: all ease 0.3s;
-    -ms-transition: all ease 0.3s;
-}
-.social .fa-twitter:hover {
-    background: #00ABE3;
-}
-.social .fa-instagram:hover {
-    background: #375989;
-}
-.social .fa-youtube:hover {
-    background: #FF1F25;
-}

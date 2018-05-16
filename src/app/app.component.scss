@@ -2,6 +2,21 @@
 @import "../styles/global_styles.scss";
 @import url('https://fonts.googleapis.com/css?family=Encode+Sans|Roboto+Slab');
 
+.parallax {
+  /* The image used */
+  background-image: url("../assets/leaves2.jpg");
+  // background-image: linear-gradient(red, yellow, green);
+
+  /* Set a specific height */
+  min-height: 200px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 @include breakpoint(md, up){
     nav-item{
         padding: 0 100px;

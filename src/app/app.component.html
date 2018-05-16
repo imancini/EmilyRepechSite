@@ -1,8 +1,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-<body background="./assets/leaves2.jpg">
-
+<!-- <body background="./assets/leaves2.jpg"> -->
+<body class="parallax">
 <!-- HEADER -->
 <nav class="navbar navbar-expand navbar-light bg-light justify-content-center ">
     <div>
@@ -24,9 +24,15 @@
                 routerLinkActive="active">
                 <a class="nav-link" routerLink="/about">About</a>
             </li>
+            <li class="nav-item" 
+                routerLinkActive="active">
+                <a class="nav-link" routerLink="/contact">Contact</a>
+            </li>
         </ul>
     </div>
 </nav>
+
+<!-- <div class="parallax"></div> -->
 
 <router-outlet></router-outlet>
 
