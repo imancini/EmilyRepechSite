@@ -28,7 +28,7 @@
 // app
 // 
 .back-container {
-    background-color: rgba(255,255,255,0.9);
+    background-color: rgba(255,255,255,0.95);
     min-height: 100vh;
     width: 100vw;
 }
@@ -40,7 +40,7 @@
 }
 
 .navbar {
-    margin-bottom: 100px;
+    margin-bottom: 300px;
 }
 
 .nav-link{
@@ -48,10 +48,15 @@
 }
 
 .name {
+    color: white;
+    text-shadow:  2px 2px 4px #000000;
+    position: relative;
+    bottom: 150px;
     padding-top: 40px;
     padding-bottom: 40px;
     font-family: 'Roboto Slab', serif;
     font-size: 36pt;
+    padding: 0;
 }
 
 //
@@ -83,11 +88,18 @@
 // 
 // resume
 // 
-.resume-container {
+.resume-container-parent {
+    background: transparent;
+    max-width: 768px;
+    margin: auto;
+}
+.resume-container-child {
     background: transparent;
     padding-bottom: 30px;
-    max-width: 768px;
+    max-width: 95vw;
+    margin: auto;
 }
+
 
 .experience-education-banner {
     font-family: 'Roboto Slab', serif;
