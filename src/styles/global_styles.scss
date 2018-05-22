@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css?family=Encode+Sans|Roboto+Slab');
+@import './animate.scss-master';
 
 @mixin breakpoint($bp, $direction: up) {
     $map: (
@@ -27,20 +28,28 @@
 // 
 // app
 // 
+
+.hidden {
+    opacity: 0;
+}
+.visible {
+    opacity: 1;
+}
+
 .back-container {
     background-color: rgba(255,255,255,0.95);
     min-height: 100vh;
     width: 100vw;
 }
-    
-@include breakpoint(md, up){
-    nav-item{
-        padding: 0 100px;
+ 
+.nav-item {
+    @include breakpoint(md, up) {
+        padding: 0 35px;
     }
 }
 
 .navbar {
-    margin-bottom: 300px;
+    margin-bottom: 30vh;
 }
 
 .nav-link{
@@ -51,7 +60,7 @@
     color: white;
     text-shadow:  2px 2px 4px #000000;
     position: relative;
-    bottom: 150px;
+    bottom: 15vh;
     padding-top: 40px;
     padding-bottom: 40px;
     font-family: 'Roboto Slab', serif;
@@ -69,6 +78,14 @@
 
 .summary {
     font-family: 'Roboto Slab', serif;
+}
+
+.left-banner{
+    @include slideInLeft();
+}
+
+.right-banner{
+    @include slideInRight();
 }
 
 #emily-repech {
@@ -98,6 +115,7 @@
     padding-bottom: 30px;
     max-width: 95vw;
     margin: auto;
+    font-family: 'Roboto Slab', serif;
 }
 
 

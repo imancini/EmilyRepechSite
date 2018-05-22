@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 import * as CONSTANTS from './resume_constants';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-resume',
@@ -16,6 +17,12 @@ export class ResumeComponent implements OnInit {
   }
 
   ngOnInit() {
+    AOS.init();
   }
+
+  ngAfterViewInit() {
+    AOS.refresh();
+  }
+
 
 }
