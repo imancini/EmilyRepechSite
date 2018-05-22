@@ -8,7 +8,7 @@
         lg: (max: 1199px, min: 992px),
         md: (max: 991px, min: 768px),
         sm: (max: 767px, min: 576px),
-        xs: (max: 576px, min: 0)
+        xs: (max: 575px, min: 0)
     );
     
     $end-map: (
@@ -71,9 +71,10 @@
 //
 // home
 //
-.name2 {
+.paragraph-title {
     font-family: 'Roboto Slab', serif;
     text-decoration: underline;
+    font-size: 24pt;
 }
 
 .summary {
@@ -247,4 +248,7 @@
     max-width: 768px;
     min-height: 100vh;
     font-family: 'Roboto Slab', serif;
+}
+.about-element {
+    margin:auto;
 }
