@@ -4,26 +4,26 @@
 
 @mixin breakpoint($bp, $direction: up) {
     $map: (
-        xl: (min: 1200px, max: 4294967296px),
-        lg: (max: 1199px, min: 992px),
-        md: (max: 991px, min: 768px),
-        sm: (max: 767px, min: 576px),
-        xs: (max: 575px, min: 0)
+      xl: (min: 1200px, max: 4294967296px),
+      lg: (max: 1199px, min: 992px),
+      md: (max: 991px, min: 768px),
+      sm: (max: 767px, min: 576px),
+      xs: (max: 576px, min: 0)
     );
-    
+  
     $end-map: (
-        up: min,
-        down: max
+      up: min,
+      down: max
     );
     $end: map_get($end-map, $direction);
     $query-attr: #{$end}-width;
     $bound: map_get($map, $bp);
     $bound-val: map_get($bound, $end);
-    
+  
     @media (#{$query-attr}: $bound-val) {
-        @content;
+      @content;
     }
-}
+  }
 
 // 
 // app
@@ -131,6 +131,7 @@
 .experience-title {
     font-family: 'Roboto Slab', serif;
     font-weight: bold;
+    font-size: 15pt
 }
 
 .experience-company {
@@ -151,7 +152,11 @@
 
 .experience-details-list {
     font-family: 'Roboto Slab', serif;
-
+}
+.first-column {
+    @include breakpoint(sm, down){
+        margin-bottom: 0;
+    }
 }
 
 // 
@@ -251,4 +256,7 @@
 }
 .about-element {
     margin:auto;
+}
+.about-image {
+    box-shadow: 5px 5px 2px grey;
 }
