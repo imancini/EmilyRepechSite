@@ -28,7 +28,10 @@
 // 
 // app
 // 
-
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 .hidden {
     opacity: 0;
 }
