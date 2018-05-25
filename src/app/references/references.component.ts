@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as CONSTANTS from './references_constants';
-
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-references',
@@ -15,6 +15,11 @@ export class ReferencesComponent implements OnInit {
   }
 
   ngOnInit() {
+    AOS.init();
+  }
+
+  ngAfterViewInit() {
+    AOS.refresh();
   }
 
 }
